@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Macondo&family=Playfair+Display:ital@1&family=Roboto+Slab:wght@100;200;400;500;600;700;800;900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tiro+Gurmukhi:ital@1&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    scroll-behavior: smooth;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+.login-page,
+.signup-page {
+
+    background: url(../img/home/login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.demo {
+    width: 100%;
+    height: 900px;
+    background-color: rgb(218, 216, 216);
+}
+
+/* nav section */
+.nav-icon {
+    color: rgb(42, 42, 42);
+}
+
+.nav-icon:hover {
+    transform: scale(1.5);
+    transition-duration: 0.5s;
+}
+
+.second-nav {
+    background: linear-gradient(#aae1fa, #d1ecf8, #aae1fa);
+    /* background: linear-gradient( #85d3f7,#a6e2fc,#85d3f7); */
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+}
+
+.second-nav-bg {
+    background-color: skyblue;
+}
+
+/* nav section end */
+
+
+
+
+/* home page desigin started */
+/* home  first section  */
+.home-content {
+    position: absolute;
+    top: 300px;
+    left: 34%;
+    color: #ffffff;
+}
+
+
+.carousel{
+    height: 540px;
+}
+
+
+
+
+/* arrivals & feature books started */
+.all-book-img {
+    height: 260px;
+    width: 100%;
+    border: 2px solid rgb(180, 227, 246);
+}
+
+.all-book-img:hover {
+    transform: scale(0.9);
+    border: 2px solid rgb(29, 180, 240);
+}
+
+.fertured,
+.arrivals {
+    background-color: rgb(244, 247, 248);
+}
+
+.deal {
+    background-color: rgba(242, 242, 242, 1);
+}
+
+#Category {
+    background-color: rgb(244, 247, 248);
+}
+
+/* arrivals & feature books started */
+
+
+
+
+
+
+
+/* about us section started  */
+
+.aboutus-info {
+    background-color: #e9f2f7;
+}
+
+.about-text {
+    text-shadow: 5px 4px 2px rgb(166, 216, 235);
+}
+
+/* about us section end  */
+
+
+
+
+
+
+
+
+
+
+/* contact us section started */
+.map {
+    background-color: rgba(112, 112, 254, 0.3);
+    border-top: 1px solid rgb(196, 194, 194);
+}
+
+.contact-section-first {
+    background-image: url(../img/home/contact-bgr.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact-section-second {
+    background-color: rgba(1, 83, 107, 0.2);
+}
+
+/* contact us section end */
+
+
+/* services section started  */
+.service-bg {
+    height: 430px;
+}
+
+/* services section end */
+    
+
+.auther {
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+/* book section */
+
+/* Category page started  */
+
+.comics-book {
+background-color: rgb(236, 248, 244);
+}
+
+.comics-content {
+position: relative;
+}
+
+.click {
+position: absolute;
+top: 80%;
+left: 0%;
+width: 100%;
+background-color: rgb(10, 162, 250);
+padding: 10px 97px;
+display: none;
+font-weight: 400;
+}
+.gap {
+margin-bottom: 40px;
+}
+
+.click a {
+text-decoration: none;
+color: rgb(255, 255, 255);
+}
+
+.comics-content:hover .click {
+display: block;
+
+}
+
+.comics-img img {
+width: 100%;
+height: 340px;
+object-fit: cover;
+box-shadow: -5px -5px 10px 1px rgb(59, 59, 59);
+border: 8px solid skyblue;
+}
+/* Category page end  */
+
+
+
+
+
+/* kids story section started */
+.c-img {
+    width: 100%;
+    height: 400px;
+}
+
+.books-nav {
+    background-color: gainsboro;
+}
+
+.books-nav-1 {
+    border-radius: 10px;
+}
+
+.story-heading-name {
+    color: rgb(255, 121, 0);
+    border-radius: 15px;
+}
+
+.sotry-heading {
+    font-family: Courier, monospace;
+    color: rgb(40, 169, 255);
+    text-shadow: 2px 2px 5px black;
+}
+
+
+.story-img {
+    height: 270px;
+    border: 7px solid yellow;
+}
+
+.story-img:hover {
+    transform: scale(1.07);
+    transition-duration: 0.7s;
+    border: 7px solid rgb(255, 121, 0);
+}
+
+.main-section {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* animation part  */
+.ctg-name-1 {
+    animation-name: ctg;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ctg {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.ctg-name-2 {
+    animation-name: ctg;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ctg {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.ctg-name-3 {
+    animation-name: ctg;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ctg {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.ctg-name-4 {
+    animation-name: ctg;
+    animation-duration: 1s;
+    animation-delay: 0.6;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ctg {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* book section end  */
+
+
+
+
+
+/* footer section start  */
+.footer {
+    background-image: url(../img/home/footer-bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-logo {
+    width: 100%;
+}
+
+.shair-icon {
+    background-color: rgba(0, 0, 3, 0.2);
+}
+
+/* footer section end  */

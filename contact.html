@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/boostrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/home/fab.png">
+    <title>BOOKSTORE</title>
+</head>
+
+<body>
+    <!-- first nav bar section start  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white  ">
+        <div class="container-fluid">
+            <div class="logo px-5 col-md-3"><img src="assets/img/home/logo.png" class="logo-img img-fluid "
+                    width="140px" alt="logo-img">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class=" col-sm-12 col-md-9">
+                    <input class="form-control me-2 border border-primary" type="search" placeholder="Search"
+                        aria-label="Search">
+                </div>
+                <div class="col-md-2 text-center mx-5 ">
+                    <div class="row ">
+                        <div class=" col-12 id=" logout" onclick="logout()" ">
+
+                            <h4><i class="fa-solid fa-user nav-icon fs-5 text"></i> Log Out</h4>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- first nav bar section end  -->
+
+
+    <!-- second nav bar section start -->
+    <section class="second-nav ">
+        <nav class="navbar navbar-expand-lg   ">
+            <div class="container-fluid ">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse d-flex justify-content-center text-align-center"
+                    id="navbarNavDropdown">
+                    <ul class="navbar-nav  fw-bold">
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark fs-5 text px-3 nav-link" aria-current="page"
+                                href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fs-5 text px-3 nav-link" href="aboutUS.html">About US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fs-5 text px-3 nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fs-5 text px-3 nav-link" href="services.html">Services</a>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark fs-5 text px-3 nav-link" href="#"
+                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Books
+                            </a>
+                            <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item text-dark shadow-sm"
+                                        href="category.html?category=story_books">story_books</a></li>
+                                <li><a class="dropdown-item text-dark shadow-sm"
+                                        href="category.html?category=romantic_book">romantic_book</a></li>
+                                <li><a class="dropdown-item text-dark shadow-sm"
+                                        href="category.html?category=comics_book">Comics_book</a></li>
+                                <li><a class="dropdown-item text-dark shadow-sm"
+                                        href="category.html?category=horror_story">horror_story</a></li>
+                            </ul>
+                        </li>
+
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- second nav bar section end -->
+
+
+    <!-- contact home section started  -->
+    <section class="contact-section-first">
+        <div class="container pb-5">
+            <div class="col-12 text-center py-3">
+                <h1 class="display-5 text fw-bold text-primary">Contact US</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="info px-4">
+                        <div class="col-12 text-center fw-bold fs-4 text pb-5 pt-3">Let's Start a Conversation</div>
+                        <h5 class="pb-5">Ask how we can help you:</h5>
+                        <p class="text-dark py-2"><span class="fw-bold">Need and expert? </span> you are morethan
+                            welcometo
+                            leaveyour contact info and we will be in touch shortly</p>
+                        <p class="text-dark py-2"> <span class="fw-bold"> see our platform in action</span> <br>
+                            Requesta personalized demo, or sign up for a <span class="text-primary fw-bold">30-day free
+                                trial
+                            </span> of TUNE's perfomabce marketing platform </p>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <form action="backend.php">
+                        <div class="background px-4 shadow">
+
+                            <label for="name" class="form-label text-dark mt-3">Full Name <span>*</span></label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter Your Full Name"
+                                required>
+                            <div class="invalid-feedback">
+                                Please provide a Fullname .
+                            </div>
+
+
+                            <label for="number" class="form-label text-dark mt-3">Phon Number<span>*</span></label>
+                            <input type="Number" id="number" class="form-control" required
+                                placeholder="Enter Your Mobole Number">
+                            <div class="invalid-feedback">
+                                Please provide Your mobole number .
+                            </div>
+
+
+                            <label for="email" class="form-label text-dark mt-3">Last Name <span>*</span></label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter Your Email ID"
+                                required>
+                            <div class="invalid-feedback">
+                                Please provide a Email Address .
+                            </div>
+
+
+                            <label for="message" class="text-dark mt-3"> Comments / Question</label>
+                            <textarea name="message" id="message" rows="3" class="form-control"
+                                placeholder="Write your message"></textarea>
+                            <div class="contact-btn text-center pt-4 pb-3">
+                                <button class="btn btn-primary px-5 fw-bold fs-5 text"> Submit</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact home section end  -->
+
+
+    <section class="contact-section-second">
+        <div class="container">
+            <div class="row text-center py-5 gx-5">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4  ">
+                    <div class="col-12"> <a href="#"><i
+                                class="fa-sharp fa-solid fa-house-chimney fs-1 text text-primary p-3 bg-white rounded-circle "></i></a>
+                    </div>
+                    <h5 class="py-2">VISIT US</h5>
+                    <p class="text-dark">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="# " class="text-decoration-none">location</a>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
+                    <div class="col-12"> <a href="#"><i
+                                class="fa-solid fa-phone fs-1 text text-primary p-3 bg-white rounded-circle "></i></a>
+                    </div>
+                    <h5 class="py-2">CALL US </h5>
+                    <p class="text-dark"> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <a href="#" class="text-decoration-none">+91 7030180350</a>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
+                    <div class="col-12"> <a href="#"><i
+                                class="fa-solid fa-message fs-1 text text-primary p-3 bg-white rounded-circle"></i></a>
+                    </div>
+                    <h5 class="py-2">MESSAGE US</h5>
+                    <p class="text-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <a href="#" class="text-decoration-none">abcd@email.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- map start -->
+    <div class="col-12  map pt-3 bg-light">
+        <h1 class="text-dark text-center fw-bold">Our Location</h1>
+        <p class="text-dark fw-bold fs-5 ">Reach us</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.193353077157!2d72.95225051479652!3d19.186755453467963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b902ff48f9fd%3A0xea7d3a1ca046bb33!2sWagle%20Estate%2C%20Shivaji%20Nagar%2C%20Kisan%20Nagar%201%2C%20Thane%20West%2C%20Thane%2C%20Maharashtra%20400080!5e0!3m2!1sen!2sin!4v1661437251588!5m2!1sen!2sin"
+            width="100%" height="100%" style="border: 1px;;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    <!-- mat end  -->
+
+    <!-- footer section started  -->
+    <section class="ft">
+        
+        <div class="col-12 text-center py-2 shair-icon">
+            <a href="#" class=" text-decoration-none px-1 rounded-circle"><img class="img-fluid"
+                    src="assets/img/home/facebook.png" alt="instagram" width="40px"></a>
+            <a href="#" class=" text-decoration-none px-1 rounded-circle"><img class="img-fluid"
+                    src="assets/img/home/twitter.png" alt="instagram" width="40px"></a>
+            <a href="#" class=" text-decoration-none px-1 rounded-circle"><img class="img-fluid"
+                    src="assets/img/home/pinterest.png" alt="instagram" width="40px"></a>
+            <a href="#" class=" text-decoration-none px-1 rounded-circle"><img class="img-fluid"
+                    src="assets/img/home/youtube.png" alt="instagram" width="40px"></a>
+            <a href="#" class=" text-decoration-none px-1 rounded-circle"><img class="img-fluid"
+                    src="assets/img/home/linkedin.png" alt="instagram" width="40px"></a>
+            <a href="#" class=" text-decoration-none px-1 rounded-circle"><img class="img-fluid"
+                    src="assets/img/home/instagram.png" alt="instagram" width="40px"></a>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row py-5 gx-5">
+                    <div class="col-md-6 col-sm-12 my-2">
+                        <img src="assets/img/home/logo.png" class="footer-logo img-fluid" alt="logo">
+                    </div>
+                    <div class="col-md-6 col-sm-12  py-4 text-center shadow">
+                        <form action="">
+                            <h2 class="fw-bold py-3">Subscribe for Latest Updates</h2>
+                            <input type="email" name="" placeholder="Enter Your Email" id="" class="form-control">
+                            <button class="btn btn-primary px-5 my-4"> subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+        <div class="container-fluid">
+            <div class="row text-center footer-sticker bg-dark py-3">
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                    <div class=" text-white">
+                        &copy; 2022 - All rights reserved by Balkrushna Bhovad.
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                    <div class=" text-white ">
+                        Powered by : Bloomzen Infosolution Pvt.Ltd
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section end  -->
+
+    <script src="assets/boostrap/js/bootstrap.js"></script>
+
+</body>
+
+</html> 

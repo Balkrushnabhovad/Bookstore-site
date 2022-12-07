@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+            integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+            integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+            integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="assets/boostrap/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="icon" href="assets/img/home/fab.png">
+        <title>BOOKSTORE</title>
+    </head>
+
+<body class="login-page">
+
+
+    <div class="col-md-6 col-lg-4 offset-lg-4 offset-md-3 mt-5">
+        <div class="bg-light px-5 py-4 border rounded-3 shadow-lg">
+            <div class="col-12 text-center"><img src="assets/img/home/logo.png" class="logo-img img-fluid "
+                width="140px" alt="logo-img"></div>
+            <div class="col-12 text-center fs-4 py-4 ">LOGING YOUR ACCOYNT</div>
+
+            <form onsubmit="login(this)" id="login">                
+                <div class="mb-4">
+                    <input type="email" class="form-control shadow " placeholder="Enter Email" id="email">
+                    <p class="form-text text-end">Enter Valid Email</p>
+                </div>
+                <div class="mb-4">
+                    <input type="password" class="form-control shadow" placeholder="Enter Password" id="password">
+                    <p class="form-text text-end">Enter Valid Password</p>
+                </div>
+                <div class="mb-4 form-check text-center w-100">        
+                    <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input"> I agree to read Terms & Conditions
+                    </label>
+                  
+                </div>
+                <button type="submit" class="btn btn-primary w-100 my-3 shadow">Login</button>
+                <p class="text-center m-0">Don't have an account?, <a href="signup-page.html">Please Signup</a></p>
+            </form>
+
+        </div>
+    </div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+<script>
+
+ 
+ document.getElementById("login").addEventListener("submit",function(e){
+    e.preventDefault();
+ })
+
+function login(value){
+    var email = value.email.value;
+    var pass = value.password.value;
+   
+    if(localStorage.getItem("email")){
+        var localemail = localStorage.getItem("email").split(",");
+       for (le in localemail){
+            if(email == localemail[le]){
+                var localpass = localStorage.getItem("password").split(",");
+                if(localpass[le] == pass){
+                    localStorage.setItem("code","secret");
+                    window.location.href="index.html";
+                    emailnotfound = false;
+                    break;
+                }else{
+                    alert("login failed due to incorrect password")
+                    emailnotfound = false;
+                    break;
+                }
+            }else{
+               emailnotfound = true;
+            }
+        
+       }    
+       if(emailnotfound){
+            alert("login failed due to email not found");
+       }
+    } else{
+        alert("login failed due to no users please signup");
+    }   
+
+    value.reset()
+}
+</script>
+
+
+
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/boostrap/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/home/fab.png">
+  <title>BOOKSTORE</title>
+</head>
+
+<body>
+  <!-- first nav bar section start  -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white  ">
+    <div class="container-fluid">
+      <div class="logo px-5 col-md-3"><img src="assets/img/home/logo.png" class="logo-img img-fluid " width="140px"
+          alt="logo-img">
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class=" col-sm-12 col-md-9">
+          <input class="form-control me-2 border border-primary" type="search" placeholder="Search" aria-label="Search">
+        </div>
+        <div class="col-md-2 text-center mx-5 ">
+          <div class="row ">
+            <div class=" col-12 id=" logout" onclick="logout()" ">
+
+                            <h4><i class=" fa-solid fa-user nav-icon fs-5 text"></i> Log Out</h4>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- first nav bar section end  -->
+
+
+  <!-- second nav bar section start -->
+  <section class="second-nav ">
+    <nav class="navbar navbar-expand-lg   ">
+      <div class="container-fluid ">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse d-flex justify-content-center text-align-center" id="navbarNavDropdown">
+          <ul class="navbar-nav  fw-bold">
+            <li class="nav-item">
+              <a class="nav-link active text-dark fs-5 text px-3 nav-link" aria-current="page"
+                href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark fs-5 text px-3 nav-link" href="aboutUS.html">About US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark fs-5 text px-3 nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark fs-5 text px-3 nav-link" href="services.html">Services</a>
+            </li>
+
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark fs-5 text px-3 nav-link" href="#" id="navbarDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Books
+              </a>
+              <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item text-dark shadow-sm"
+                    href="category.html?category=story_books">story_books</a></li>
+                <li><a class="dropdown-item text-dark shadow-sm"
+                    href="category.html?category=romantic_book">romantic_book</a></li>
+                <li><a class="dropdown-item text-dark shadow-sm"
+                    href="category.html?category=comics_book">Comics_book</a></li>
+                <li><a class="dropdown-item text-dark shadow-sm"
+                    href="category.html?category=horror_story">horror_story</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- second nav bar section end -->
+
+
+  <div class="comics-book  p-5">
+    <div class="heading">
+      <h1 class="text-center gap"><strong id="category_name">Comics Books</strong></h1>
+    </div>
+    <div class="container">
+      <div class="row g-5 text-center" id="book_list">
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- footer section end  -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row py-5 gx-5">
+        <div class="col-md-6 col-sm-12 my-2">
+          <img src="assets/img/home/logo.png" class="footer-logo img-fluid" alt="logo">
+        </div>
+        <div class="col-md-6 col-sm-12  py-4 text-center shadow">
+          <form action="">
+            <h2 class="fw-bold py-3">Subscribe for Latest Updates</h2>
+            <input type="email" name="" placeholder="Enter Your Email" id="" class="form-control">
+            <button class="btn btn-primary px-5 my-4"> subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 text-center py-2 shair-icon">
+      <a href="#" class=" text-decoration-none px-1 rounded-circle"><img class="img-fluid"
+          src="assets/img/home/facebook.png" alt="instagram" width="40px"></a>
+      <a href="#" class=" text-decoration-none px-1 rounded-circle"><img class="img-fluid"
+          src="assets/img/home/twitter.png" alt="instagram" width="40px"></a>
+      <a href="#" class=" text-decoration-none px-1 rounded-circle"><img class="img-fluid"
+          src="assets/img/home/pinterest.png" alt="instagram" width="40px"></a>
+      <a href="#" class=" text-decoration-none px-1 rounded-circle"><img class="img-fluid"
+          src="assets/img/home/youtube.png" alt="instagram" width="40px"></a>
+      <a href="#" class=" text-decoration-none px-1 rounded-circle"><img class="img-fluid"
+          src="assets/img/home/linkedin.png" alt="instagram" width="40px"></a>
+      <a href="#" class=" text-decoration-none px-1 rounded-circle"><img class="img-fluid"
+          src="assets/img/home/instagram.png" alt="instagram" width="40px"></a>
+    </div>
+  </footer>
+
+  <div class="container-fluid">
+    <div class="row text-center footer-sticker bg-dark py-3">
+      <div class="col-md-6 col-lg-6 col-sm-12">
+        <div class=" text-white">
+          &copy; 2022 - All rights reserved by Balkrushna Bhovad.
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6 col-sm-12">
+        <div class=" text-white ">
+          Powered by : Bloomzen Infosolution Pvt.Ltd
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer section end  -->
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="assets/boostrap/js/bootstrap.js"></script>
+
+  <script src="assets/js/myScript.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+
+  <script>
+
+    var url_string = window.location.href;
+    var url = new URL(url_string);
+    var category = url.searchParams.get("category");
+
+    fetchBooks(category);
+
+
+    function fetchBooks(category) {
+      let xhr = new XMLHttpRequest();
+      xhr.open("get", "assets/db.json.txt", true);
+      xhr.onload = function () {
+        data = this.response;
+        data = JSON.parse(data);
+        a = 0
+        for (let x in data["books"]) {
+
+          if (data["books"][x].category == category) {
+            if (category == "romantic_book") {
+              document.getElementById("category_name").innerHTML = "Romantic Books";
+            } else if (category == "comics_book") {
+              document.getElementById("category_name").innerHTML = "Comics Books";
+            } else if (category == "horror_story") {
+              document.getElementById("category_name").innerHTML = "Horror Books";
+            }
+            if (a = 8) {
+
+              document.getElementById("book_list").innerHTML += `<div class="col-12 col-md-6 col-lg-3">
+          <div class="comics-content ">
+            <div class="comics-img img-fluid ">
+              <a href="page.html?book=${data["books"][x].id}"><img src="${data["books"][x].img_url}" alt="${data["books"][x].img_url}" class="img-fluid "></a>
+              <div class="click ">
+                <a href="page.html?book=${data["books"][x].id}">BUY NOW</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>`;
+              a++
+            }
+          }
+        }
+      };
+      xhr.send();
+    }
+
+
+  </script>
+</body>
+
+</html>
